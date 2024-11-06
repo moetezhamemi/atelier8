@@ -6,9 +6,10 @@ import { UpdateProduitComponent } from './update-produit/update-produit.componen
 const routes: Routes = [{path: "produits", component : ProduitsComponent},
   {path: "add-produit", component : AddProduitComponent},
   { path: "", redirectTo: "produits", pathMatch: "full" },
-  {path: "updateProduit/:id", component: UpdateProduitComponent},
-];
+  {path: "updateProduit/:id", component: UpdateProduitComponent}
 
+
+];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
